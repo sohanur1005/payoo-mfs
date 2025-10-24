@@ -1,24 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <main>
-        <div class="flex justify-center items-center min-h-screen bg-base-200">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payoo Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <main>
+           <div class="flex justify-center items-center min-h-screen bg-base-200">
   <div class="mockup-phone w-[400px] h-[600px]">
     <div class="mockup-phone-camera"></div>
-    <div class="mockup-phone-display bg-white text-black grid place-content-center">
-      It's Glowtime.
+    <div class="mockup-phone-display bg-white text-black flex flex-col items-center justify-start p-4">
+      <!-- available balance -->
+      <div class="stats shadow w-full">
+        <div class="stat text-center">
+          <div class="stat-value">9400</div>
+          <div class="stat-desc">Available Balance</div>
+        </div>
+      </div>
+
+      <div class="divider w-full"></div>
+      <!-- user action button -->
+       <div>
+        <button class="btn btn-lg">Add Money</button>
+
+       <button class="btn btn-lg">Cashout</button>
+       </div>
+       <div class="divider"></div>
+    <!-- Add money form  start   -->
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="labe1">Amount</label>
+          <input type="number" class="input" placeholder="Amount" />
+          <label class="label">Pin</label>
+          <input type="password" class="input" placeholder="Pin" autocomplete="off"  required/>
+          
+          <button class="btn btn-primary mt-4">Money Add</button>
+        </fieldset>
+      </div>
+    </div>
+
+    <!-- Add money End -->
+
+
+
     </div>
   </div>
 </div>
 
-    </main>
-    
-</body>
-</html>
+
+        </main>
+        
+    </body>
+    </html>
