@@ -15,9 +15,10 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     if(mobileNumber == '5' && pinNumber =='123')
     {
         console.log('You are log in');
+        window.location.href='/home.html';
     }
     else{
-        alert('wrong number or pin');
+        alert('Wrong number or pin');
     }
 
 
